@@ -1,9 +1,11 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="app">
+    <div id="nav">
+      <router-link to="/">Events</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
   </div>
-  <router-view />
 </template>
 
 <style>
@@ -18,7 +20,9 @@
 #nav {
   padding: 30px;
 }
-
+h4 {
+  font-size: 20px;
+}
 #nav a {
   font-weight: bold;
   color: #2c3e50;
